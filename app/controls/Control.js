@@ -7,6 +7,7 @@ import Input from './Input';
 import Radio from './Radio';
 import Select from './Select';
 import Textarea from './Textarea';
+import Msg from './Message';
 const { useContext } = wp.element;
 
 const ucfirst = str => str.length ? str[ 0 ].toUpperCase() + str.slice( 1 ) : str;
@@ -82,6 +83,8 @@ const Control = ( { field, autoFills = [] } ) => {
 			return <Icon { ...field } value={ _value } update={ update } />;
 		case 'select':
 			return <Select { ...field } value={ _value } update={ update } />;
+		case 'msg':
+			return <Msg { ...field } value={ _value } update={ update } />;
 	}
 };
 

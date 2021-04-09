@@ -4,6 +4,7 @@ export const BasicDatas = [
 	{ type: 'text', name: 'labels.name', label: __( 'Plural name', 'mb-custom-post-type' ), required: true },
 	{ type: 'text', name: 'labels.singular_name', label: __( 'Singular name', 'mb-custom-post-type' ), required: true },
 	{ type: 'text', name: 'slug', label: __( 'Slug', 'mb-custom-post-type' ), required: true, updateFrom: 'labels.singular_name' },
+	{ type: 'msg', name: 'msg', label: __( 'Message Warning', 'mb-custom-post-type' )},
 ];
 
 export const CodeDatas = [
